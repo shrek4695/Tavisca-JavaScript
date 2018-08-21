@@ -1,0 +1,67 @@
+<!DOCTYPE Html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />  
+</head>
+<body> 
+    <form name="register" onsubmit="return val(this)" action="Success-Page.html">
+        <div class="Heading">Registration Form</div>
+        <fieldset>
+            <table>
+                <tr> 
+                    <td><label>First Name<sup>*</sup></label></td>
+                    <td><input type="text" name="Fname" placeholder="Your First Name Please"/></td>
+                </tr>
+                <tr>
+                    <td><label>Last Name</label></td>
+                    <td><input type="text" name="Lname" placeholder="Your Last Name Please" /></td>
+                </tr>
+                <tr>
+                    <td><label>Phone Number<sup>*</sup></label></td>
+                    <td><input type="text" name="Number" placeholder="XXXXXXXXXX"/></td>
+                </tr>
+                <tr>
+                    <td><label>Email</label><sup>*</sup></td>
+                    <td><input type="text" name="Email" placeholder="Example: fun@fun.com"/></td>
+                </tr>
+                <tr>
+                    <td><label>Address</label></td>
+                    <td><textarea name="Address" placeholder="Enter Your Address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>City</label></td>
+                    <td>
+                        <select name="City">
+                            <option value="">Select</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Banglore">Banglore</option>
+                            <option value="Hydrabad">Hydrabad</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    
+                    <td>
+                        <input type="radio" name="Gender" value="Female" /> Female
+                        <input type="radio" name="Gender" value="Male" /> Male
+                        <input type="radio" name="Gender" value="Trans" /> Trans
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" id="sbm" />
+                    </td>
+                    <td>
+                        <textarea name="Error-Display"></textarea>
+                    </td>
+                </tr>
+                    </table>
+        </fieldset>
+    </form>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

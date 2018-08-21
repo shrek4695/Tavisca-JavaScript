@@ -1,0 +1,41 @@
+
+textarea[name="Error-Display"] {
+    visibility: hidden;
+}
+form[name="register"] {
+    width: 50rem;
+    margin-top: 10rem;
+}
+input[type="text"]{
+    width: 20rem;
+}
+sup {
+    color: red;
+}
+body {
+    background-image: url("im.png");
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+*  {
+    padding: 0;
+    margin: 0 auto;
+}
+input[type="submit"] {
+    padding: 0.5rem 1rem;
+    font-size:1rem;
+    font-weight:bold;
+    border: 0;
+}
+table {
+    padding : 1rem;
+    width: 50rem;
+    background-color: rgba(191, 90, 90, 0.61);
+}
+.Heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 1rem;
+    color: #125b8b;
+}
