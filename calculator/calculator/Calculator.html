@@ -1,0 +1,34 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+         <section>
+              <div class="heading">Calculator</div>
+              <div class="Display-Screen">
+                    <input class="input-screen" type="text" placeholder="Enter Expression" onkeypress="keyboard(event)" />
+                    <div class="result-screen">Result :</div>
+               </div>
+          </section>
+          <section class="calculate">
+              <input type="button" value="1" onclick="read(this.value)" />
+              <input type="button" value="2" onclick="read(this.value)" />
+              <input type="button" value="3" onclick="read(this.value)" />
+              <input type="button" value="+" onclick="read(this.value)" />
+              <input type="button" value="4" onclick="read(this.value)" />
+              <input type="button" value="5" onclick="read(this.value)" />
+              <input type="button" value="6" onclick="read(this.value)" />
+              <input type="button" value="-" onclick="read(this.value)" />
+              <input type="button" value="7" onclick="read(this.value)" />
+              <input type="button" value="8" onclick="read(this.value)" />
+              <input type="button" value="9" onclick="read(this.value)" />
+              <input type="button" value="*" onclick="read(this.value)" />
+              <input type="button" value="0" onclick="read(this.value)" />
+              <input type="button" value="=" onclick="compute()" />
+              <input type="button" value="CLR" onclick="completeclean()" />
+              <input type="button" value="/" onclick="read(this.value)" />
+           </section>
+    </body>
+</html>

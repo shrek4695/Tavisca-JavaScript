@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+}
+body {
+    width: 50rem;
+    margin-top: 10rem;
+}
+.heading {
+    width: 46rem;
+    height: 2.5rem;
+    font-size: 4rem;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 2rem;
+}
+input {
+    width: 12.5rem;
+    height: 5rem;
+    font-size: 2rem;
+}
+
+.calculate input:nth-child(n) {
+    background-color: #8d8c8c;
+    color: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.calculate input:nth-child(4n) {
+    background-color: #a9a6a6;
+}
+
+.calculate input:hover {
+    background-color :#ba774b;
+}
+
+.calculate {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50rem;
+}
+
+.Display-screen {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50rem;
+    flex-direction: row;
+    height: 40rem;
+    background-color: #6cb97c;   
+}
+
+.result-screen {
+    width: 49.8rem;
+    border: 0;
+    height: 4rem;
+    text-align: left;
+    display: inherit;
+    font-size: 2rem;
+}
+
+.input-screen {
+    width: 49.8rem;
+    height: 4rem;
+    text-align: left;
+    font-size: 2rem;
+    background-color: #8d8c8c;
+}
