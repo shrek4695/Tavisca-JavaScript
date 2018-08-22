@@ -1,0 +1,48 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul {
+    list-style-type:none;
+    margin-left:0;
+    background-color:white;
+    border: 1px solid black;
+}
+
+div {
+    border:1px solid black;
+    visibility:hidden;
+}
+
+ul li:hover {
+    background-color: rgba(89, 165, 186, 0.86);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 40rem;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
+input:hover {
+ box-shadow: rgba(38, 36, 36, 0.72) 3px 3px;
+}
+
+li {
+    width: 40rem;
+    height: 1.2rem;
+    font-size: 1rem;
+}
+
+.im {
+    height:30rem;
+    width:40rem;
+    font-size:10rem;
+    font-weight:bold;
+}
