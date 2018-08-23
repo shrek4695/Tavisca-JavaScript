@@ -4,10 +4,13 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script type="text/javascript" src="script.js"></script>
 </head>
-<body onclick="styling()">  <!-- onclick="styling()" -->
-    <section class="menu">
-            <div class="im"><img id="logo" src="logo.jpg" alt="Tavisca-logo" /></div>
-            <input type="text" id="input-area" onkeyup="suggest()"/>
+<body onclick="focusout()">  <!-- onclick="styling()" -->
+    <section class="menu" onclick="focusout()">
+            <div class="im"><img id="logo" src="logo.jpg" alt="Tavisca-logo"/></div>
+            <div id="container">
+            <input type="text" id="input-area" onkeyup="navigate()" />
+            <a id="clean" onclick="completeclear()"><img id="icon" src="close.png" /></a>
+            </div>
             <div class="drop-menu">
                 <ul id="suggestion" ></ul>
             </div>

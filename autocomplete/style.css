@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    height: 86vh;
+}
+
 ul {
     list-style-type: none;
     margin-left: 0;
@@ -17,14 +21,43 @@ ul {
 
 ul li:hover {
     background-color: rgba(89, 165, 186, 0.86);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.onselect {
+    background-color: rgba(89, 165, 186, 0.86);
+    cursor: pointer;
+    font-weight:bold;
+    font-size: 2rem;
+}
+
+.ondeselect {
+    background-color: #ffffff;
 }
 
 .menu {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
     width: 40rem;
-    height:40rem;
+    height:100%;
+}
+
+#clean {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#icon {
+    padding: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+#container {
+    position: relative;
 }
 
 input {
@@ -37,16 +70,17 @@ input {
 
 input:hover {
  box-shadow: rgba(38, 36, 36, 0.72) 3px 3px;
- background-color: #e5d997;
+ background-color: #f4f5c8;
+ cursor: pointer;
 }
 
-input:active {  
-    background-color: #e4d488;
+input:active {
+        background-color: #f4f5c8;
 }
 
 li {
-    height: 1.2rem;
-    font-size: 1rem;
+    max-height: 4rem;
+    font-size: 1.5rem;
     width: 40rem;
     color: #205c67;
 }
@@ -54,10 +88,16 @@ li {
 .im {
     width: 40rem;
     height: 10rem;
+    margin-top: 10rem;
 }
 
 #logo {
     width: 40rem;
     height: 8rem;
     opacity: 0.7;
+}
+
+#suggestion {
+    max-height: 10rem;
+    overflow: auto;
 }
