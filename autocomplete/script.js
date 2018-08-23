@@ -6,23 +6,23 @@ function suggest() {
         document.getElementById("suggestion").innerHTML = "";
     }
     else {
-        var i;
-        var c = 0;
+        var index;
+        var counter = 0;
         document.getElementById("input-area").style.backgroundColor = "#e5d997";
-        var j = document.getElementById("input-area").value;
-        j = j.toLowerCase();
-        for (i = 0; i < names.length; i++) {
-            if (names[i].includes(j)) {
-                c++;
+        var searchval = document.getElementById("input-area").value;
+        searchval = searchval.toLowerCase();
+        for (index = 0; index < names.length; index++) {
+            if (names[index].includes(searchval)) {
+                counter++;
                 var selectList = document.createElement("li");
-                selectList.setAttribute("id", i + 1);
-                selectList.innerHTML = names[i].toUpperCase();
+                selectList.setAttribute("id", index + 1);
+                selectList.innerHTML = names[index].toUpperCase();
                 selectList.setAttribute("onclick", "c(this.innerHTML)");
                 document.getElementById("suggestion").appendChild(selectList);
                 document.getElementById("suggestion").style.visibility = "visible";
             }
         }
-        if (c == 0) {
+        if (counter == 0) {
             document.getElementById("suggestion").innerHTML = "<li>MATCH NOT FOUND</li>";
         }
     }
