@@ -8,7 +8,7 @@ function suggest() {
     else {
         var i;
         var c = 0;
-        var text = "";
+        document.getElementById("input-area").style.backgroundColor = "#e5d997";
         var j = document.getElementById("input-area").value;
         j = j.toLowerCase();
         for (i = 0; i < names.length; i++) {
@@ -22,9 +22,7 @@ function suggest() {
                 document.getElementById("suggestion").style.visibility = "visible";
             }
         }
-
-        if (c == 0)
-        {
+        if (c == 0) {
             document.getElementById("suggestion").innerHTML = "<li>MATCH NOT FOUND</li>";
         }
     }
@@ -32,13 +30,16 @@ function suggest() {
 function c(e) {
     document.getElementById("input-area").value = e.toUpperCase();
     document.getElementById("suggestion").style.visibility = "hidden";
+    document.getElementById("input-area").style.backgroundColor = "#ffffff";
 }
 function styling(e) {
     document.getElementById("suggestion").style.visibility = "hidden";
     if (event.target.type != "text") {
         document.getElementById("suggestion").style.visibility = "hidden";
+        document.getElementById("input-area").style.backgroundColor = "#ffffff";
     }
     else {
         document.getElementById("suggestion").style.visibility = "visible";
+        document.getElementById("input-area").style.backgroundColor = "#e5d997";
     }
 }

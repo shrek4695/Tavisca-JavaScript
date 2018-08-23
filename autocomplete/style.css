@@ -4,15 +4,15 @@
 }
 
 ul {
-    list-style-type:none;
-    margin-left:0;
-    background-color:white;
+    list-style-type: none;
+    margin-left: 0;
+    background-color: white;
     border: 1px solid black;
 }
 
-div {
-    border:1px solid black;
-    visibility:hidden;
+.drop-menu {
+    border: 1px solid black;
+    visibility: hidden;  
 }
 
 ul li:hover {
@@ -22,27 +22,42 @@ ul li:hover {
 .menu {
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
+    width: 40rem;
+    height:40rem;
 }
 
 input {
     width: 40rem;
     height: 3rem;
     font-size: 1.5rem;
+    color: #205c67;
+    box-shadow: rgba(38, 36, 36, 0.72) 1px 1px;
 }
 
 input:hover {
  box-shadow: rgba(38, 36, 36, 0.72) 3px 3px;
+ background-color: #e5d997;
+}
+
+input:active {  
+    background-color: #e4d488;
 }
 
 li {
-    width: 40rem;
     height: 1.2rem;
     font-size: 1rem;
+    width: 40rem;
+    color: #205c67;
 }
 
 .im {
-    height:30rem;
-    width:40rem;
-    font-size:10rem;
-    font-weight:bold;
+    width: 40rem;
+    height: 10rem;
+}
+
+#logo {
+    width: 40rem;
+    height: 8rem;
+    opacity: 0.7;
 }
