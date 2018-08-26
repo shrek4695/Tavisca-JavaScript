@@ -38,6 +38,7 @@ function val(event) {
     else if (Email == "")
     {
         disp("Enter Email")
+        return false;
     }
     else if (!(mail.test(Email))) {
         disp("Invalid Email");
