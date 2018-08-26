@@ -10,12 +10,12 @@ body {
 ul {
     list-style-type: none;
     margin-left: 0;
-    background-color: white;
-    border: 1px solid black;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
 }
 
 .drop-menu {
-    border: 1px solid black;
+    border: 1px solid #000000;
     visibility: hidden;  
 }
 
@@ -34,7 +34,7 @@ ul li:hover {
 }
 
 .ondeselect {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
 .menu {
@@ -64,25 +64,25 @@ input {
     width: 40rem;
     height: 3rem;
     font-size: 1.5rem;
-    color: #205c67;
+    color: #205C67;
     box-shadow: rgba(38, 36, 36, 0.72) 1px 1px;
 }
 
 input:hover {
  box-shadow: rgba(38, 36, 36, 0.72) 3px 3px;
- background-color: #f4f5c8;
+ background-color: #F4f5C8;
  cursor: pointer;
 }
 
 input:active {
-        background-color: #f4f5c8;
+        background-color: #F4F5C8;
 }
 
 li {
     max-height: 4rem;
     font-size: 1.5rem;
     width: 40rem;
-    color: #205c67;
+    color: #205C67;
 }
 
 .im {
